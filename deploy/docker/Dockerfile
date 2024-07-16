@@ -46,7 +46,7 @@ ARG EXTRA_DEPS=''
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-COPY deploy/docker/docker-entrypoint.sh /usr/bin/
+COPY docker-entrypoint.sh /usr/bin/
 
 RUN set -eu; \
     apt-get update; \
